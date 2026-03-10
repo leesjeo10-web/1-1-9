@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 태그 선택자 = 같은 태그와 공유 */
+        div{
+            background-color: rgb(203, 84, 84);
+            border :1px solid rgb(10,0,120);
+            padding : 1rem;
+            margin:1rem;
+        }
+        /* id 선택자 = 같은 아이디를 공유한 태그와 동결 */
+        #aa{
+            background-color: aqua;
+        }
+        #id{
+            font-size: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1> 로그인 </h1>
+    <div id="aa">
+        <label for="a">id</label>
+        <input type="text" name="" id="id">
+    </div>
+    <div>
+        <label for="b">password</label>
+        <input type="password" name="" id="a">
+    </div>
+</body>
+</html>
