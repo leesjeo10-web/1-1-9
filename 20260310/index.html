@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>문서제목</title>
     <style>
         /* 태그 선택자 = 같은 태그와 공유 */
         div{
@@ -17,8 +17,23 @@
             background-color: aqua;
         }
         #id{
-            font-size: 2px;
+            font-size: 2rem;
         }
+        /* 클래스 선택자 */
+        .btn{
+            color : white;
+            background-color: red;
+            border: none;
+            cursor:pointer;
+            padding: 1rem 2rem 3rem 4rem;
+            /*        12   3   6    9 */
+        }
+        /* 상태 선택자 */
+        .btn:hover{
+            background-color: rgb(230,230,30);
+            /* option shift f 자동정렬 */
+        }
+        
     </style>
 </head>
 <body>
@@ -31,5 +46,6 @@
         <label for="b">password</label>
         <input type="password" name="" id="a">
     </div>
+    <button type ="submit" class="btn">로그인</button>
 </body>
 </html>
